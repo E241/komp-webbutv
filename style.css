@@ -1,7 +1,10 @@
-body{
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu:400,700);
+body {
 	background-color: #f0f0f0;
+	font-family: "Ubuntu", sans-serif;
 }
-head{
+
+header{
 	width:100%;
 	height:50px;
 	position: absolute;
@@ -10,4 +13,10 @@ head{
 nav{
 	position: absolute;
 	bottom: 0px;
+}
+
+.code {
+	font-family: "Ubuntu Mono", monospace;
+	background-color: #404040;
+	color: #3cf;
 }
