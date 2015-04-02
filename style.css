@@ -2,6 +2,8 @@
 body {
 	background-color: #f0f0f0;
 	font-family: "Ubuntu", sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 header{
@@ -12,11 +14,49 @@ header{
 }
 nav{
 	position: absolute;
-	bottom: 0px;
+	top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    background: linear-gradient(#0048b5, #00327e);
+    padding: 10px;
+    box-shadow: 0px 5px 50px black;
 }
 
-.code {
+/*.code {
 	font-family: "Ubuntu Mono", monospace;
 	background-color: #404040;
 	color: #3cf;
+    padding: 5px;
+    border-radius: 10px;
+    
+}*/
+#navbar {
+    display: inline;
+    list-style: none;
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+}
+
+#navbar li {
+    display: inline;
+    list-style: none;
+}
+
+.sep {
+    border-right: solid 1px white;
+}
+
+.button {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#content {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 75px;
 }

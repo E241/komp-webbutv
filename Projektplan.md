@@ -14,6 +14,7 @@ En webbida som är anpassad för dator liksom mobiler.
 
 ###Tillgångar
 W3Schools - Information, text
+Higlight.js - Syntax styling
 
 ###Teckensnitt
 Ubuntu - Brödtext
