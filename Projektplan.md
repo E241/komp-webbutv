@@ -27,3 +27,11 @@ Bg Kodexempel     #404040;
 Text Kodexempel   #3cf;
 Menyrad bg        #003D99; (Gradient)
 Menyrad text      #fff;
+
+
+###Layout
+index.html: 
+	Fullskärm bild + logga
+	-> navbar.html
+navbar.html:
+	Navbar + iframe med alla andra sidor i.
