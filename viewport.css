@@ -91,6 +91,10 @@ nav{
     -webkit-filter: grayscale() brightness(255);
     filter: grayscale() brightness(255);
 }
+.bwhite {
+    -webkit-filter: blur(1px) grayscale() brightness(255);
+    filter: blur(1px) grayscale() brightness(255);
+}
 
 .invert {
     -webkit-filter: invert();
@@ -133,4 +137,6 @@ nav{
     -ms-transform: scale(-1);
     transform: scale(-1);
     image-rendering: -moz-crisp-edges;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
 }
