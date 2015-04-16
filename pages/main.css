@@ -1,6 +1,6 @@
 #selsect {
     margin: auto;
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -17,31 +17,114 @@
     -ms-flex-positive: 1;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
 }
 
 .selopt {
     padding: 50px;
     font-size: 6em;
-    color: white;
+    color: black;
     margin: auto;
     cursor: pointer;
 }
 
 #jsopt {
-    background-color: #fdd600;
+    background-image: url(../img/jscode.png);
+    color: transparent;
+    padding: 0px;
+}
+
+#jsopt span{
+    background-color: transparent;
+    color: transparent;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#jsopt span a {
+    padding: 50px;
+}
+
+#jsopt span:hover {
+    /*background-image: none;*/
+    background-color: #cbe000;
     color: black;
-    max-width: 100px;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #cssopt {
-    background-color: #00c6be;
+    background-image: url(../img/csscode.png);
+    color: transparent;
+    padding: 0px;
+}
+
+#cssopt span{
+    background-color: transparent;
+    color: transparent;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#cssopt span a {
+    padding: 50px;
+}
+
+#cssopt span:hover {
+    /*background-image: none;*/
+    background-color: #009fe5;
     color: black;
-    max-width: 200px;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 #htmlopt {
+    background-image: url(../img/htmlcode.png);
+    padding: 0px;
+}
+
+#htmlopt span{
+    background-color: transparent;
+    color: transparent;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#htmlopt span a {
+    padding: 50px;
+}
+
+#htmlopt span:hover {
+    /*background-image: none;*/
     background-color: #00e57b;
     color: black;
-    max-width: 250px;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
