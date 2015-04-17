@@ -4,6 +4,7 @@ header{
 	position: absolute;
 	top: 0px;
 }
+
 nav{
 	position: absolute;
     z-index: 50;
@@ -20,6 +21,7 @@ nav{
     height: 70px;
     padding: 0px;
 }
+
 #navbar {
     display: inline;
     list-style: none;
