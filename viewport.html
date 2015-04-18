@@ -6,23 +6,24 @@
 	<link rel="stylesheet" type="text/css" href="viewport.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="lib/highlight.pack.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 	<header>
 
 		<nav>
             <ul id="navbar">
-                <li><a id="prev" class="button top left"><img src="img/arrow.png" class="back bwhite" /> <span>Tillbaka</span></a></li>
-                <li><a id="home" class="button top center"><img src="img/home.png" class="invert" /></a></li>
-                <li><a id="next" class="button top right"><span>Framåt</span><img src="img/arrow.png" class="white" /></a></li>
+                <li id="prev"><a class="button top left"><img src="img/arrow.png" class="back bwhite" /> <span>Tillbaka</span></a></li>
+                <li id="home"><a class="button top center"><img src="img/home.png" class="invert" /></a></li>
+                <li id="next"><a class="button top right"><span>Framåt</span><img src="img/arrow.png" class="white" /></a></li>
             </ul>	
 		</nav>
 
 	</header>
 	<div id="view">
-		<iframe src="pages/main.html" name="view"></iframe>
+		<iframe id="viewFrame" src="pages/main.html" name="view"></iframe>
 	</div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
 </body>
 </html>
