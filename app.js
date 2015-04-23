@@ -2,11 +2,14 @@ $(document).ready(function() {
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
     });
+    if (document.baseURI.indexOf('main.html') > -1) {
+        setNavbarColor('#003D99');
+    }
     resizeView();
 });
 
 function resizeView() {
-	$('#view').css({'top':$('header').innerHeight()-12.5});
+	$('#view').css({'top':$('navBg').height()});
 }
 
 function setNavbarColor(color) {
@@ -21,6 +24,7 @@ $('.selopt').click(function(e){
             setNavbarColor('#009fe5');
         } else if ($(this).attr('id') == 'jsopt') {
             setNavbarColor('#eeff00');
+            $("#home img",parent.document).removeClass('invert');
         }
         location.href = e.currentTarget.dataset.href;
     }

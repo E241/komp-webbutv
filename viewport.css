@@ -6,8 +6,10 @@ header{
 }
 
 #navBg{
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
 	position: absolute;
     z-index: 50;
 	top: 0px;

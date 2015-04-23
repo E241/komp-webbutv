@@ -19,3 +19,9 @@ body {
     margin: auto;
     margin-top: 75px;
 }
+
+.article {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 5px 10px #6f6f6f;
+}
