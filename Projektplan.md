@@ -13,25 +13,27 @@ Att ge en grundläggande kunskap inom HTML5 och CSS3 som ger en bra bas att bygg
 En webbida som är anpassad för dator liksom mobiler. 
 
 ###Tillgångar
-W3Schools - Information, text
-Higlight.js - Syntax styling
+ - W3Schools - Information, text
+ - Higlight.js - Syntax styling
 
 ###Teckensnitt
-Ubuntu - Brödtext
-Ubuntu Mono - Kodexempel
+ - Ubuntu - Brödtext
+ - Ubuntu Mono - Kodexempel
 
 ###Färger
-Bakgrund          #f0f0f0;
-Brödtext          #000;
-Bg Kodexempel     #404040;
-Text Kodexempel   #3cf;
-Menyrad bg        #003D99; (Gradient)
-Menyrad text      #fff;
+Contex | Hex-värde
+-------|----------
+Bakgrund | #f0f0f0;
+Brödtext | #000;
+Bg Kodexempel | #404040;
+Text Kodexempel | #3cf;
+Menyrad bg | #003D99;
+Menyrad text | #fff;
 
 
 ###Layout
-index.html: 
-	Fullskärm bild + logga
-	-> navbar.html
-navbar.html:
-	Navbar + iframe med alla andra sidor i.
+ - index.html: 
+  - Fullskärm bild + logga
+  - -> viewport.html
+ - viewport.html:
+  - Navbar + iframe med alla andra sidor i.
