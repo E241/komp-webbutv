@@ -24,7 +24,6 @@ $('.selopt').click(function(e){
             setNavbarColor('#009fe5');
         } else if ($(this).attr('id') == 'jsopt') {
             setNavbarColor('#eeff00');
-            $("#home img",parent.document).removeClass('invert');
         }
         location.href = e.currentTarget.dataset.href;
     }
