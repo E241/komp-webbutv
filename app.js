@@ -25,6 +25,7 @@ $(document).ready(function() {
     });
     if (baseURI.indexOf('main.html') > -1) {
         setNavbarColor('#003D99');
+        $('#view', parent.document).fadeIn(500);
     }
     resizeView();
 });
