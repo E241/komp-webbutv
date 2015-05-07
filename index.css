@@ -49,6 +49,12 @@ button{
     font-size: 1.5em;
     padding:0px;
     margin:0px;
+    position: absolute;
+    top:50%;
+    margin-top: -35px;
+    left:50%;
+    margin-left: -70px;
+    transition: height 2s, top 2s, left 2s, margin 2s, width 2s ;
 }
 h2{
     padding:0px;
@@ -56,14 +62,17 @@ h2{
 }
 .topbar{
     height:70px;
-    position:absolute;
-    top:0px;
-    
+    top: 0px;
+    display: block;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 0px;
     
 }
 .topbar2{
     width:100%;
-    
+    left:0;
+    margin:0;
 }
 
 @-webkit-keyframes pulse{

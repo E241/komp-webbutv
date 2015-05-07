@@ -1,0 +1,2 @@
+//* location.href='viewport.html *//
+
