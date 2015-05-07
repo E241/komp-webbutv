@@ -39,8 +39,8 @@
     color: transparent;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     width: 100%;
     height: 100%;
     display: block;
@@ -58,8 +58,8 @@
     color: black;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #cssopt {
@@ -73,8 +73,8 @@
     color: transparent;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     width: 100%;
     height: 100%;
     display: block;
@@ -92,8 +92,8 @@
     color: black;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 #htmlopt {
@@ -106,8 +106,8 @@
     color: transparent;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     width: 100%;
     height: 100%;
     display: block;
@@ -125,6 +125,6 @@
     color: black;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
