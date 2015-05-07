@@ -3,28 +3,16 @@ $('#viewFrame').load(function() {
 });
 
 $('#prev').click(function(e) {
-    $('#viewFrame').attr('src', $('#content', $('#viewFrame').contents()).data('prev'));
+    goToURL($('#content', $('#viewFrame').contents()).data('prev'), true);
 });
 
 $('#next').click(function(e) {
-    $('#viewFrame').attr('src', $('#content', $('#viewFrame').contents()).data('next'));
+    goToURL($('#content', $('#viewFrame').contents()).data('next'), true);
 });
 
 $('#home').click(function(e) {
-    $('#viewFrame').attr('src', $('#content', $('#viewFrame').contents()).data('home'));
+    goToURL($('#content', $('#viewFrame').contents()).data('home'), true);
 });
-
-window.onkeyup = function(e) {
-   var key = e.keyCode ? e.keyCode : e.which;
-    //alert('Keypress! ' + key);
-   if (key == 39) { //right
-       $('#viewFrame').attr('src', $('#content', $('#viewFrame').contents()).data('next'));
-   }else if (key == 37) { //left
-       $('#viewFrame').attr('src', $('#content', $('#viewFrame').contents()).data('prev'));
-   } else if (key == 40) { //down - home
-       $('#viewFrame').attr('src', $('#content', $('#viewFrame').contents()).data('home'));
-   }
-}
 
 function checkButtons() {
     if ($('#content', $('#viewFrame').contents()).data('prev') == "" || $('#content', $('#viewFrame').contents()).data('prev') == null) {
