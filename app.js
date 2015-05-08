@@ -73,6 +73,14 @@ function setNavbarColor(color) {
     $("#navBg",parent.document).css({backgroundColor:color});
 }
 
+$('a').click(function(e){
+    var href = e.currentTarget.getAttribute('href'); 
+    if (href && href != null && !href.isEmptyObject && href != '') {
+        e.preventDefault();
+        goTo(href);
+    }
+});
+
 $('.selopt').click(function(e){
     if (!isIE()) {
         if (e.currentTarget.dataset.href != "" && !e.currentTarget.dataset.href.isEmptyObject && e.currentTarget.dataset.href != null) {
