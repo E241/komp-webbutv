@@ -6,7 +6,10 @@ Syntax:
 ```
     
 ##Listan
-
+ - [ ] Skriva färdigt innehållet!
+  - [ ] HTML
+  - [ ] CSS
+  - [ ] JS
  - [ ] Göra större hitboxes till nav knapparna.
  - [x] Förklara för Robin vad en .md fil är.
 
