@@ -12,7 +12,7 @@ function isIE() {
         var ua = window.navigator.userAgent;
         var msie = ua.indexOf("MSIE ");
 
-        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If IE < 11
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If IE < 11 return true
             return true;
         else                 // If another browser, return false
             return false;
@@ -84,25 +84,11 @@ $('a').click(function(e){
 $('.selopt').click(function(e){
     if (!isIE()) {
         if (e.currentTarget.dataset.href != "" && !e.currentTarget.dataset.href.isEmptyObject && e.currentTarget.dataset.href != null) {
-            if ($(this).attr('id') == 'htmlopt') {
-                setNavbarColor('#00e57b');
-            } else if ($(this).attr('id') == 'cssopt') {
-                setNavbarColor('#009fe5');
-            } else if ($(this).attr('id') == 'jsopt') {
-                setNavbarColor('#eeff00');
-            }
             goTo(e.currentTarget.dataset.href);
         }
     } else {
         var href = e.currentTarget.getAttribute('data-href');
         if (href != "" && !href.isEmptyObject && href != null) {
-            if ($(this).attr('id') == 'htmlopt') {
-                setNavbarColor('#00e57b');
-            } else if ($(this).attr('id') == 'cssopt') {
-                setNavbarColor('#009fe5');
-            } else if ($(this).attr('id') == 'jsopt') {
-                setNavbarColor('#eeff00');
-            }
             goTo(href);
         }
     }
