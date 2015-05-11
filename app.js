@@ -85,6 +85,30 @@ $('a').click(function(e){
     }
 });
 
+$(document).keyup(function(e) {
+    if (baseURI.indexOf('viewport.html') > -1) {
+        if (e.which == 39) {
+            goToURL($('#content', $('#viewFrame').contents()).data('next'), true);
+        }
+        if (e.which == 37) {
+            goToURL($('#content', $('#viewFrame').contents()).data('prev'), true);
+        }
+        if (e.which == 72) {
+            goToURL($('#content', $('#viewFrame').contents()).data('home'), true);
+        }
+    } else {
+        if (e.which == 39) {
+            goTo($('#content').data('next'));
+        }
+        if (e.which == 37) {
+            goTo($('#content').data('prev'));
+        }
+        if (e.which == 72) {
+            goTo($('#content').data('home'));
+        }
+    }
+});
+
 $('.selopt').click(function(e){
     if (!isIE()) {
         if (e.currentTarget.dataset.href != "" && !e.currentTarget.dataset.href.isEmptyObject && e.currentTarget.dataset.href != null) {
