@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+<head>
+	<title>Html5 & Css3</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/html/intro.html" data-home="/pages/html/index.html" data-next="/pages/html/next.html">
+        <article class="article">
+            <h2 class="heading2">Hello, world!</h2>
+            <p>Nu börjar vi skriva lite kod! Vi börjar med ramen, innan vi går vidare med detaljer. För att berätta för webbläsaren att detta är en HTML-fil skriver vi följande.</p><pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+            <p>Detta berättar att vi kommer att använda oss utav HTML5, och ger oss tillgång till alla dess <em>taggar</em>. Taggar är grundstenen i HTML, det som vi skriver för att berätta vad saker är. Den första Taggen vi behöver är html-taggen.</p><pre><code class="html">&lt;html&gt;&lt;/html&gt;</code></pre>
+            <p>Märk hur jag skrev Taggen två gånger, en gång med ett "/" innan Taggens namn. Taggar kommer nämligen oftast i par, en <em>öppnings-tagg</em> och en <em>stängnings-tagg</em>. Mellan dessa kan man sedan skriva vad man vill ska finnas i det <em>elementet</em>. Mellan html-taggarna skriver vi en <em>head-tagg</em>. Den innehåller information för webbläsaren, såsom titel på sidan.</p>
+<pre><code class="html">&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+&lt;/html&gt;</code></pre>
+            <p>Nu måste vi definiera en titel på sidan och det gör vi med hjälp utav <em>title-taggen</em>. Den måste stå inom <em>head-taggarna</em></p>
+<pre><code class="html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+            <p>Mellan <em>title-taggarna</em> kan du skriva vilken text du vill, så länge den inte innehåller "&lt;" eller "&gt;". Det vi har skrivit hittils påverkar inte sidans innehåll, men det är det dags att ändara på. Vi börjar med att lägga till en ny tagg mellan <em>html-taggarna</em>, nämligen <em>body-taggen</em>.</p>
+<pre><code class="html">&lt;html&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Mellan dessa placeras allt innehåll på sidan. För att demonstrera skriver vi en header, <em>h1-tagg</em>.</p>
+<pre><code class="html">&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </article>
+        
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+<pre><code class="html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <h1>Hello, world!</h1>
+            </div>
+        </article>
+    </section>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>

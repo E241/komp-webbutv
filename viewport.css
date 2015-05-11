@@ -93,12 +93,8 @@ header{
 }
 
 .white {
-    -webkit-filter: grayscale() brightness(255);
-    filter: grayscale() brightness(255);
-}
-.bwhite {
-    -webkit-filter: blur(1px) grayscale() brightness(255);
-    filter: blur(1px) grayscale() brightness(255);
+    -webkit-filter: grayscale() brightness(255) drop-shadow(0px 0px 2px #000);
+    filter: grayscale() brightness(255) drop-shadow(0px 0px 2px #000);
 }
 
 .invert {
@@ -106,19 +102,6 @@ header{
     filter: invert() drop-shadow(0px 0px 2px #000);
 }
 
-/*
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.center {
-    margin: auto;
-}
-*/
 #view {
     position: absolute;
     top: 100px;

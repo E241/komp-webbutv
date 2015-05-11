@@ -31,8 +31,12 @@ function goToURL(url, isNav) {
         window.location.hash = url;
         $('#viewFrame').attr('src', url);
     } else {
-        parent.window.location.hash = url;
-        location.href = url;
+        if (url.indexOf('http://') < 0) {
+            parent.window.location.hash = url;
+            location.href = url;
+        } else {
+            parent.window.location.href = url;
+        }
     }
 }
 
@@ -62,11 +66,11 @@ $(document).ready(function() {
         setNavbarColor('#eeff00');
         $('#view', parent.document).fadeIn(500);
     }
-    resizeView();
+    window.setTimeout(resizeView(), 1000);
 });
 
 function resizeView() {
-	$('#view').css({'top':$('navBg').height()});
+	$('#view').css({'top':$('#navBg').innerHeight()});
 }
 
 function setNavbarColor(color) {
