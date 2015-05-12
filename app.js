@@ -44,6 +44,10 @@ function goTo(url) {
     goToURL(url, false);
 }
 
+$(window).resize(function() {
+    resizeView();
+});
+
 $(document).ready(function() {
     initBaseURI();
     getPageWanted();
@@ -70,7 +74,16 @@ $(document).ready(function() {
 });
 
 function resizeView() {
-	$('#view').css({'top':$('#navBg').innerHeight()});
+	//alert(window.innerWidth);
+    if (window.innerWidth > 900 && (baseURI.indexOf('viewport.html') > -1)) {
+        $('#navBg').css({'top':0, 'bottom':$('#navBg').innerHeight()});
+        $('#view').css({'top':$('#navBg').innerHeight(), 'bottom':0});
+        console.log('Large ' + window.innerHeight);
+    } else if (window.innerWidth <= 900 && (baseURI.indexOf('viewport.html') > -1)) {
+        $('#navBg').css({'top':window.innerHeight-$('#navBg').innerHeight(), 'bottom':0});
+        $('#view').css({'top':0, 'bottom':$('#navBg').innerHeight()});
+        console.log('Small ' + window.innerHeight);
+    }
 }
 
 function setNavbarColor(color) {
