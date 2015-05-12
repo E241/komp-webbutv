@@ -35,7 +35,11 @@ body {
     margin-bottom: 10px;
 }
 
-
+@media screen and (max-width: 800px) {
+    .article pre code {
+        font-size: 1.25em !important;
+    }
+}
 
 .article pre {
     margin-left: 25px;

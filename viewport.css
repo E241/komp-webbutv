@@ -24,6 +24,19 @@ header{
     height: 70px;
     padding: 0px;
 }
+/*
+@media screen and (max-width: 800px) {
+    #navBg {
+        height: 100px;
+    }
+    header {
+        height: 80px;
+    }
+    .button img {
+        height: 62px !important;
+        width: 62px !important;
+    }
+}*/
 
 #navbar {
     display: inline;

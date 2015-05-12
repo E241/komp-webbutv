@@ -3,7 +3,8 @@ $('#button').click(function() {click();});
 
 function click(){
     $('#button').addClass('topbar');
-    setTimeout(click2, 2000)
+    //click2();
+    setTimeout(click2, 250)
 }
 function click2(){
     $('#button').addClass('topbar2');
@@ -12,7 +13,7 @@ function click2(){
     $('#back').addClass('invis');
     $('h1').addClass('invis');
     
-    setTimeout(href, 2000)
+    setTimeout(href, 500)
 }
 function href(){
     location.href='viewport.html';
