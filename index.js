@@ -1,5 +1,5 @@
 //* location.href='viewport.html *//
-$('#button').onClick(function() {click();});
+$('#button').click(function() {click();});
 
 function click(){
     $('#button').addClass('topbar');
@@ -12,7 +12,7 @@ function click2(){
     $('#back').addClass('invis');
     $('h1').addClass('invis');
     
- //*   setTimeout(href, 2000)
+    setTimeout(href, 2000)
 }
 function href(){
     location.href='viewport.html';

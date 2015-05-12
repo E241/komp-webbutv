@@ -129,3 +129,13 @@ header{
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
+
+#next {
+    display: none;
+}
+#prev {
+    display: none;
+}
+#home {
+    display: none;
+}
