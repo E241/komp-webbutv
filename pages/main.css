@@ -28,6 +28,36 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 470px) {
+    .selopt {
+        font-size: 3em !important;
+        display: block;
+    }
+    
+    #jsopt {
+        margin-top: 2px;
+    }
+    
+    #jsopt span {
+        height: 50% !important;
+        background-color: #eeff00 !important;
+        color: black !important;
+    }
+    
+    #cssopt span {
+        height: 50% !important;
+        background-color: #009fe5 !important;
+        color: black !important;
+    }
+    
+    #htmlopt span {
+        height: 50% !important;
+        background-color: #00e57b !important;
+        color: black !important;
+    }
+    
+}
+
 #jsopt {
     background-image: url(../img/jscode.png);
     color: transparent;
