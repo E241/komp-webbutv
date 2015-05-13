@@ -143,6 +143,31 @@ header{
     filter: blur(1px);
 }
 
+#ieNotice {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    max-width: 450px;
+    background-color: #ddd;
+    padding: 5px;
+    border: 0px solid transparent;
+    box-shadow: 5px 5px 50px black;
+}
+
+#ieNotice h3 {
+    display: inline-block;
+    margin: 0px;
+}
+
+#ieNotice div {
+    border-bottom: 1px solid black;
+    padding: 0px;
+}
+
+#ieNotice div a {
+    float: right;
+}
+
 #next {
     display: none;
 }

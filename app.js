@@ -31,7 +31,7 @@ function goToURL(url, isNav) {
         window.location.hash = url;
         $('#viewFrame').attr('src', url);
     } else {
-        if (url.indexOf('http://') < 0) {
+        if (url.indexOf('http://') < 0 && url.indexOf('javascript:') < 0) {
             parent.window.location.hash = url;
             location.href = url;
         } else {
@@ -44,6 +44,15 @@ function goTo(url) {
     goToURL(url, false);
 }
 
+function showIENotice() {
+    $('#ieNotice').css({'top':window.innerHeight - $('#ieNotice').innerHeight(), 'left':window.innerWidth - $('#ieNotice').innerWidth()});
+    $('#ieNotice').slideDown();
+}
+
+$('#ieNotice div a').click(function(){
+    $('#ieNotice').slideUp();
+});
+
 $(window).resize(function() {
     resizeView();
 });
@@ -51,6 +60,8 @@ $(window).resize(function() {
 $(document).ready(function() {
     initBaseURI();
     getPageWanted();
+    if (isIE()) showIENotice();
+    //showIENotice();
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
     });
