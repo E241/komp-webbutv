@@ -16,5 +16,5 @@ function click2(){
     setTimeout(href, 500)
 }
 function href(){
-    location.href='viewport.html';
+    location.href='viewport.html#/pages/main.html';
 }

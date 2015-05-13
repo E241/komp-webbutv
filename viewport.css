@@ -106,13 +106,13 @@ header{
 }
 
 .white {
-    -webkit-filter: grayscale() brightness(255) drop-shadow(0px 0px 2px #000);
-    filter: grayscale() brightness(255) drop-shadow(0px 0px 2px #000);
+    -webkit-filter: grayscale(1) brightness(255) drop-shadow(0px 0px 2px #000);
+    filter: grayscale(1) brightness(255) drop-shadow(0px 0px 2px #000);
 }
 
 .invert {
-    -webkit-filter: invert() drop-shadow(0px 0px 2px #000);
-    filter: invert() drop-shadow(0px 0px 2px #000);
+    -webkit-filter: invert(1) drop-shadow(0px 0px 2px #000);
+    filter: invert(1) drop-shadow(0px 0px 2px #000);
 }
 
 #view {

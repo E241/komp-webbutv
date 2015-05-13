@@ -1,5 +1,9 @@
 var baseURI;
 
+// DO NOT TOUCH!
+// Hack around the fox
+init();
+
 function initBaseURI() {
     baseURI = document.baseURI;
     if (!baseURI) {
@@ -57,7 +61,7 @@ $(window).resize(function() {
     resizeView();
 });
 
-$(document).ready(function() {
+function init() {
     initBaseURI();
     getPageWanted();
     if (isIE()) showIENotice();
@@ -82,7 +86,7 @@ $(document).ready(function() {
         $('#view', parent.document).fadeIn(500);
     }
     window.setTimeout(resizeView(), 1000);
-});
+}
 
 function resizeView() {
 	//alert(window.innerWidth);
