@@ -99,6 +99,7 @@ function resizeView() {
         $('#view').css({'top':0, 'bottom':$('#navBg').innerHeight()});
         console.log('Small ' + window.innerHeight);
     }
+    $('#view').css({height:window.innerHeight - $('#navBg').innerHeight()});
 }
 
 function setNavbarColor(color) {
