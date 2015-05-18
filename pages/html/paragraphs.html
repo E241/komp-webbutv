@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>Html5 & Css3</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/html/headings.html" data-home="/pages/html/index.html" data-next="/pages/html/img.html">
+        <article class="article">
+            <h2 class="heading2">Paragrafer</h2>
+            <p>Paragraphs, eller paragrafer som det heter på svenska, definieras med hjälp av <em>p-taggen</em>. Innanför en <em>p-tagg</em> skriver man ren text, som till exempel den text du läser nu.</p><pre><code class="html">&lt;p&gt;Flygande bäckasiner söka hwila på mjuka tuvor.&lt;/p&gt;</code></pre>
+            <p>Om du provade att skriva ovanstående exempel i <em>body-taggen</em> och öppnade sidan i en webbläsare, så märkte du nog att <em>å</em>, <em>ä</em> och <em>ö</em> inte såg rätt ut. Det är för att datorn inte vet att texten innehåller svenska bokstäver. För att berätta det vär webbläsaren kan man skriva följande i <em>head-taggen</em>.</p>
+            <pre><code class="html">&lt;meta charset="utf-8"&gt;</code></pre>
+        </article>
+        
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Flygande bäckasiner söka hwila på mjuka tuvor.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <p>Flygande bäckasiner söka hwila på mjuka tuvor.</p>
+            </div>
+        </article>
+    </section>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>

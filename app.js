@@ -1,9 +1,5 @@
 var baseURI;
 
-// DO NOT TOUCH!
-// Hack around the fox
-init();
-
 function initBaseURI() {
     baseURI = document.baseURI;
     if (!baseURI) {
@@ -48,8 +44,12 @@ function goTo(url) {
     goToURL(url, false);
 }
 
-function showIENotice() {
+function placeIENotice() {
     $('#ieNotice').css({'top':window.innerHeight - $('#ieNotice').innerHeight(), 'left':window.innerWidth - $('#ieNotice').innerWidth()});
+}
+
+function showIENotice() {
+    placeIENotice();
     $('#ieNotice').slideDown();
 }
 
@@ -59,6 +59,7 @@ $('#ieNotice div a').click(function(){
 
 $(window).resize(function() {
     resizeView();
+    placeIENotice();
 });
 
 function init() {
@@ -150,3 +151,7 @@ $('.selopt').click(function(e){
         }
     }
 });
+
+// DO NOT TOUCH!
+// Hack around the fox
+init();
