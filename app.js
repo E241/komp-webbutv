@@ -62,10 +62,19 @@ $(window).resize(function() {
     placeIENotice();
 });
 
+function setTitle(title, e) {
+    if (baseURI.indexOf('viewport.html') > -1 || !e) {
+        document.title = "HTMLGuiden";
+    } else {
+        parent.document.title = "HTMLGuiden - " + title;
+    }
+}
+
 function init() {
     initBaseURI();
     getPageWanted();
     if (isIE()) showIENotice();
+    setTitle(document.title, document);
     //showIENotice();
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
