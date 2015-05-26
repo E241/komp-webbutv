@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>Bilder - HTML</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/html/img.html" data-home="/pages/html/index.html" data-next="/pages/html/listor.html">
+        <article class="article">
+            <h2 class="heading2">Länkar</h2>
+            <p>Webben bygger på en liten, men väldigt viktig sak, nämligen länkar. Det är länkar som gör så att man kan hitta nya sidor, ta sig dit man vill eller dela med sig utav sina upptäckter. Utan länkar skulle sidor som google vara rätt meningslösa. Att navigera på hemsidor skulle vara näst intill omöjligt.</p><p>Länkar definieras med hjälp utav <em>a-taggen</em>. Och precis som <em>img-taggen</em> accepterar den olika attribut. Antalet attribut på <em>a-taggen</em> är enormt, men vi kommer bara gå igenom det som används till länkar. Nämligen <em>href-attributet</em>.</p><pre><code class="html">&lt;a href="http://www.google.se"&gt;Länktexten&lt;/a&gt;</code></pre>
+            <p>Innanför <em>a-taggen</em> kan man skriva fler taggar, som t.ex. <em>h1-taggen</em>. Det gör att du kan göra även bilder till länkar.</p><pre><code class="html">&lt;a href="http://www.google.se"&gt;&lt;h1&gt;Stor text&lt;/h1&gt;&lt;/a&gt;
+&lt;a href="http://www.google.se"&gt;&lt;img src="bild.jpg" alt="Länkbild" /&gt;&lt;/a&gt;</code></pre>
+        </article>
+        
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a href="http://www.google.se"&gt;Länktexten&lt;/a&gt;
+        &lt;a href="http://www.google.se"&gt;&lt;h1&gt;Stor text&lt;/h1&gt;&lt;/a&gt;
+        &lt;a href="http://www.google.se"&gt;&lt;img src="bild.jpg" alt="Länkbild" /&gt;&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <a href="http://www.google.se">Länktexten</a>
+                <a href="http://www.google.se"><h1>Stor text</h1></a>
+                <a href="http://www.google.se"><img src="http://lh5.ggpht.com/_7ZYqYi4xigk/S_bKEoyMSzI/AAAAAAAAGIw/w3t2qXSgdNI/d/largeNewGoogleLogoFinalFlat-a.png"/></a>
+            </div>
+        </article>
+    </section>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>
