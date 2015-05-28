@@ -85,3 +85,12 @@ body {
     background-position: center right;
     float: right;
 }
+
+.linkImg img {
+    border: none;
+}
+
+.centered {
+    margin-left: 25px;
+    padding: 0px;
+}
