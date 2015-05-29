@@ -11,9 +11,19 @@
     <section id="content" data-prev="/pages/html/a.html" data-home="/pages/html/index.html" data-next="/pages/html/listor.html">
         <article class="article">
             <h2 class="heading2">Listor</h2>
-            <p>Listor används till mycket. Antingen som en tydlig lista, så som i innehållsförteckningen till denna sida, eller till navigationsrutor. Listor kan se ut på många olika sätt. Den kan vara sorterat i nummerordning, eller osorterad. Listor är en serie taggar, som alla innehåller <em>li-taggen</em></p><pre><code class="html">&lt;a href="http://www.google.se"&gt;Länktexten&lt;/a&gt;</code></pre>
-            <p>Innanför <em>a-taggen</em> kan man skriva fler taggar, som t.ex. <em>h1-taggen</em>. Det gör att du kan göra även bilder till länkar.</p><pre><code class="html">&lt;a href="http://www.google.se"&gt;&lt;h1&gt;Stor text&lt;/h1&gt;&lt;/a&gt;
-&lt;a href="http://www.google.se"&gt;&lt;img src="bild.jpg" alt="Länkbild" /&gt;&lt;/a&gt;</code></pre>
+            <p>Listor används till mycket. Antingen som en tydlig lista, så som i innehållsförteckningen till denna sida, eller till navigationsrutor. Listor kan se ut på många olika sätt. Den kan vara sorterat i nummerordning, eller osorterad. Listor är en serie taggar, som alla innehåller <em>li-taggen</em></p><p>Den första typen av lista är ordnad lista, numrerad lista. Den definieras med <em>ol-taggen</em> och fylls ut med <em>li-taggar</em>.</p>
+            <pre><code class="html">&lt;ol&gt;
+    &lt;li&gt;Nummer 1&lt;/li&gt;
+    &lt;li&gt;Nummer 2&lt;/li&gt;
+    &lt;li&gt;Nummer 3&lt;/li&gt;
+&lt;ol&gt;</code></pre>
+            <p>Den andra varianten är osorterad lista, onumrerad. Den definieras med <em>ul-taggen</em> och fylls precis som <em>ol-taggen</em>.</p><pre><code class="html">&lt;ul&gt;
+    &lt;li&gt;Nummer 1&lt;/li&gt;
+    &lt;li&gt;Nummer 2&lt;/li&gt;
+    &lt;li&gt;Nummer 3&lt;/li&gt;
+&lt;ul&gt;</code></pre>
+            <p>Innanför <em>li-taggen</em> kan man skriva fler taggar, som t.ex. <em>h1-taggen</em>. Det gör att du kan ha även bilder i listor.</p><pre><code class="html">&lt;li&gt;&lt;h1&gt;Stor text&lt;/h1&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src="bild.jpg" alt="Länkbild" /&gt;&lt;/li&gt;</code></pre>
         </article>
         
         <article class="article">
@@ -26,8 +36,16 @@
     &lt;/head&gt;
     &lt;body&gt;
         &lt;a href="http://www.google.se"&gt;Länktexten&lt;/a&gt;
-        &lt;a href="http://www.google.se"&gt;&lt;h1&gt;Stor text&lt;/h1&gt;&lt;/a&gt;
-        &lt;a href="http://www.google.se"&gt;&lt;img src="bild.jpg" alt="Länkbild" /&gt;&lt;/a&gt;
+        &lt;ol&gt;
+            &lt;li&gt;Nummer 1&lt;/li&gt;
+            &lt;li&gt;Nummer 2&lt;/li&gt;
+            &lt;li&gt;Nummer 3&lt;/li&gt;
+        &lt;ol&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Nummer 1&lt;/li&gt;
+            &lt;li&gt;Nummer 2&lt;/li&gt;
+            &lt;li&gt;Nummer 3&lt;/li&gt;
+        &lt;ul&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
             
@@ -35,9 +53,16 @@
         <article class="article">
             <h2 class="heading2">Resultat</h2>
             <div class="result">
-                <a href="http://www.google.se">Länktexten</a>
-                <a href="http://www.google.se"><h1>Stor text</h1></a>
-                <a href="http://www.google.se"><img src="http://lh5.ggpht.com/_7ZYqYi4xigk/S_bKEoyMSzI/AAAAAAAAGIw/w3t2qXSgdNI/d/largeNewGoogleLogoFinalFlat-a.png"/></a>
+                <ol>
+                    <li>Nummer 1</li>
+                    <li>Nummer 2</li>
+                    <li>Nummer 3</li>
+                </ol>
+                <ul>
+                    <li>Nummer 1</li>
+                    <li>Nummer 2</li>
+                    <li>Nummer 3</li>
+                </ul>
             </div>
         </article>
     </section>
