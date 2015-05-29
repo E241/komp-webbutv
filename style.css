@@ -59,6 +59,12 @@ body {
     border: none;
 }
 
+#content canvas {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+}
+
 #content li a:link {
     color: #000;
 }
