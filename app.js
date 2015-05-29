@@ -31,7 +31,7 @@ function goToURL(url, isNav) {
         window.location.hash = url;
         $('#viewFrame').attr('src', url);
     } else {
-        if (url.indexOf('http://') < 0 && url.indexOf('javascript:') < 0) {
+        if (url.indexOf('http://') < 0 || url.indexOf('https://') < 0 && url.indexOf('javascript:') < 0) {
             parent.window.location.hash = url;
             location.href = url;
         } else {
@@ -71,6 +71,9 @@ function setTitle(title, e) {
 }
 
 function init() {
+    if (location.host == null) {
+        alert('Use a webserver, do not open files directly!');
+    }
     initBaseURI();
     getPageWanted();
     if (isIE()) showIENotice();
