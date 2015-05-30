@@ -1,0 +1,51 @@
+DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>Html5 & Css3</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/js/intro.html" data-home="/pages/js/index.html" data-next="/pages/js/html.html">
+        <article class="article">
+            <h2 class="heading2">JavaScript och HTML</h2>
+            <p>JavaScript skrivs i filer med ändelsen <em>.js</em>. Och precis som <em>CSS-filer</em> måste de länkas till HTML-filen genom en tagg, <em>script-taggen</em>.</p><pre><code class="html">&lt;script src="skript.js"&gt;&lt;/script&gt;</code></pre>
+            <p>Som ni ser så skrivs <em>script-taggen</em> med en öppnings- och en stängnings-tagg fast än den importerar en extern fil. Det är för att man även kan skriva JavaScript direkt i HTML-filen. Det rekomenderas dock att använda en extern fil.</p>
+            <p><em>Script-taggen</em> kan placeras både i <em>head-taggen</em> och <em>body-taggen</em>. Var skriptet placeras har att göra med när man vill att det ska laddas in och köras, innan body läses in eller efter. Om man placerar <em>script-taggen</em> i <em>body-taggen</em> så ska den placeras i botten, d.v.s. efter alla andra taggar.</p>
+            <p>Vi börjar med en tradition inom programmering, <em>Hello world!</em>, som används inom de flesta programmeringsspråk för att testa att man gjort rätt och förstått syntaxen. Vi skapar en fil som heter <em>skript.js</em> och placerar följande kod i den.</p>
+            <pre><code class="js">//Skickar upp en meddelanderuta
+alert("Hello, world!");</code></pre>
+            <p>Som ni såg började en rad med två snedstreck, <em>//</em>, det visar att denna rad är en kommentar som inte ska läsas utav datorn.</p>
+        </article>
+    
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+            <p><em>index.html</em>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+        &lt;script src="skript.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre></p>
+            <p><em>skript.js</em>
+<pre><code class="js">//Skickar upp en meddelanderuta
+alert("Hello, world!");</code></pre></p>
+            
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <p>Denna knapp finns inte i den kod du har skrivit, utan har placerats för att förhindra skriptet från att köras innan du har läst färdigt sidan. För dig kommer en meddelanderuta dyka upp så fort sidan har laddats och sidan kommer att vara tom för övrigt.</p>
+                <button onclick="alert('Hello, world!');" value="Klicka här!" >Klicka här!</button>
+            </div>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>
