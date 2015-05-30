@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>Html5 & Css3</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/js/html.html" data-home="/pages/js/index.html" data-next="/pages/js/functions.html">
+        <article class="article">
+            <h2 class="heading2">Variabler</h2>
+            <p>En variabel inom programmering är inte riktigt samma sak som en variabel inom matematiken. En variabel inom programmering kan innehålla vad som helst, allt från en siffra till en hel uppsats. Variabler är helt enkelt att man namger ett objekt för att skilja på dem, och återanvända dem senare. De kan bli ändrade av en del av koden, för att läsas av en annan. De är små förvaringsutrymmen för data.</p>
+            <p>För att använda variabler så måste de definieras. Det görs genom att använda nyckelordet <em>var</em>. Sedan ges variabeln ett valfritt namn.</p>
+            <pre><code class="js">var namnet;</code></pre>
+            <p>Just nu så har variabeln inte något värde. Ett värde kan ges till en variabel på två sätt, antingen i definieringen utav en variabel, eller efteråt.</p>
+            <pre><code class="js">//I definitionen
+var namnet = 101;
+
+//Senare i koden
+namnet = 'Annat värde';</code></pre>
+            <p>En variabel får endast definieras <em>en gång</em>. Man kan dock ändra värde hur många gånger man vill, förutsatt att man använder den senare metoden.</p>
+            <p>För att sedan få tag på värdet av en variabel, skriver man bara dess namn där man vill att värdet ska vara.</p>
+            <pre><code class="js">alert(namnet);</code></pre>
+            
+        </article>
+    
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+            <p><em>index.html</em></p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+        &lt;script src="skript.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p><em>skript.js</em></p>
+<pre><code class="js">//Definierar variabler
+var hello = 'Hello';
+var world;
+
+world = 'world dude';
+
+//Sätter ihop flera värden i ett med hjälp av +
+alert(hello + ', ' + world + '!');
+</code></pre>
+            
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <p>Denna knapp finns inte i den kod du har skrivit, utan har placerats för att förhindra skriptet från att köras innan du har läst färdigt sidan. För dig kommer en meddelanderuta dyka upp så fort sidan har laddats och sidan kommer att vara tom för övrigt.</p>
+                <button onclick="alert('Hello, world dude!');" value="Klicka här!" >Klicka här!</button>
+            </div>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>

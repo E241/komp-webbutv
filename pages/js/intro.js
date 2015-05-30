@@ -1,5 +1,3 @@
-"use strict";
-
 var mouse = {};
 
 var canvas = document.getElementById("jsCanvas");
@@ -7,10 +5,11 @@ var context = canvas.getContext('2d');
 
 var counter = 0;
 var lastCount = 0;
-var currentColor = "#eeff00"
+var currentColor = "#eeff00";
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
+    var letters = [];
+    letters = '0123456789ABCDEF'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
         color += letters[Math.floor(Math.random() * 16)];
