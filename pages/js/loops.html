@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>While &amp; For</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/js/if.html" data-home="/pages/js/index.html" data-next="/pages/js/document.html">
+        <article class="article">
+            <h2 class="heading2">While &amp; For</h2>
+            <p>Ibland vill man göra någonting så länge ett uttryck stämmer, t.ex fortsätta fråga efter gissningar tills användaren gissat rätt. Och det kan man göra med en <em>while-loop</em>. Den ser ut ungefär som ett if-statement, den bara kör koden om och om igen så länge uttrycket stämmer.</p>
+            <pre><code class="js">while (x != 2) {
+    //Det som ska köras så länge uttrycket stämmer
+}</code></pre>
+            <p>Alla kontroller som går att göra med ett if-statement gårt även att göra med en while-loop.</p>
+            <p>Det finns även en variant på en while-loop, i fall man vill att koden ska köras minst en gång, trots att uttrycket inte stämmer.</p><pre><code class="js">do {
+    //Det som ska köras så länge uttrycket stämmer och minst en gång även om det inte stämmer
+} while (x != 2);</code></pre>
+            <p>Sedan har vi <em>for-loop</em>. Den <em>iterear över</em>, gå igenom alla värden, en array. Den kan även användas för annat, men det är det vanligaste användningsområdet. En for-loop tar dock 3 statements. En som körs innan loopen, ett som kollar om loopen ska köras och slutligen en som körs efter loopen. Vanligtvis brukar det första statementet initiera en variabel, det andra kolla hur variabeln relaterar till någon annan, och slutligen ökas eller minskas värdet på variabeln.</p>
+            <pre><code class="js">var cars = ['BMW', 'Toyota', 'Skoda', 'Porsche'];
+for (var i = 0; i &lt; cars.length; i++) {
+    alert(cars[i]); //För att få tag på variabeln används cars[i] där i är iterationen
+}</code></pre>
+            <p>Det finns öven en variant av for-loop som itererar över ett object. Den kallas för for/in-loop.</p>
+            <pre><code class="js">var object = {key1:'värde 1', key2:'Nyckel 2', keyNr:3};
+for (x in object) {
+    //Det som ska göras med x
+}</code></pre>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>If-statement</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/js/functions.html" data-home="/pages/js/index.html" data-next="/pages/js/loops.html">
+        <article class="article">
+            <h2 class="heading2">If-statement</h2>
+            <p>Som det är nu, kan vi inte anpassa programmet beroende på vad variabler har för värde. Men det kan vi ändra på. En av de viktigaste sakerna i alla programspråk är <em>if-statements</em>. Det är en grundläggande del i <em>boolesk algebra</em> som kollar om ett uttryck är sant eller falskt.</p>
+            <p>Den enklaste varianten är att kolla om en variabel är lika med ett tal.</p>
+            <pre><code class="js">if (fish == 10) {
+    alert('Fish = 10');
+}</code></pre>
+            <p>Som ni såg skrev jag <em>==</em> istället för <em>=</em>. Det är för att ett likamedtecken betyder att jag ger en variabel ett värde, och två likamedtecken betyder att jag kollar om de är lika med varandra.</p>
+            <p>Man kan även kolla om en variabel inte är lika med ett tal.</p>
+            <pre><code class="js">if (fish != 10) {
+    alert('Fish är inte 10');
+}</code></pre>
+            <p>De flesta andra matematiska kontroller fungerar också, och finns listade nedan.</p>
+            <pre><code class="js">if (fish &gt; 10) {
+    alert('Fish är större än 10');
+}
+
+if (fish &gt;= 10) {
+    alert('Fish är större än eller lika med 10');
+}
+
+if (fish &lt; 10) {
+    alert('Fish är mindre än 10');
+}
+
+if (fish &lt;= 10) {
+    alert('Fish är mindre än eller lika med 10');
+}</code></pre>
+            <p>Utöver de matematiska kontrollerna finns det några andra som är viktiga att kunna.</p>
+            <pre><code class="js">//Kollar om en boolean är true, eller om det är en annan typ huruvida den har ett värde.
+if (fish) {
+    alert('Sant');
+}
+
+//Motsatsen till den förra
+if (!fish) {
+    alert('Falskt');
+}
+
+//Kollar om fish har samma värde som 10 och är av samma typ
+if (fish === 10) {
+    alert('Fish = 10');
+}
+//Kollar om fish inte har samma värde som 10 eller inte är av samma typ
+if (fish !== 10) {
+    alert('Fish är mindre än eller lika med 10');
+}</code></pre>
+            <p>Ibland vill man kolla flera värden innan man gör något, tillexempel att ett tal är större än noll men mindre än eller lika med 10. Det behöver man inte göra flera if-statements för att kolla, utan kan kollas i ett. Man kan även kolla om antingen det ena eller det andra är sant. T.ex. om ett tal är lika med 10 eller är lika med 20.</p><pre><code class="js">//Kollar om båda uttrycken är sanna
+if (x &gt; 0 &amp;&amp; x &lt;= 10) {
+    alert('Sant');
+}
+
+//Kollar om minst ett av utrycken är sant
+if (x == 10 || x== 20) {
+    alert('x = 10 eller 20');
+}
+</code></pre>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>

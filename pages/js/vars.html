@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
     <script src="../../lib/highlight.pack.js"></script>
-	<title>Html5 & Css3</title>
+	<title>Variabler</title>
 </head>
 <body>
     <section id="content" data-prev="/pages/js/html.html" data-home="/pages/js/index.html" data-next="/pages/js/functions.html">
@@ -21,6 +21,25 @@ var namnet = 101;
 //Senare i koden
 namnet = 'Annat värde';</code></pre>
             <p>En variabel får endast definieras <em>en gång</em>. Man kan dock ändra värde hur många gånger man vill, förutsatt att man använder den senare metoden.</p>
+            <p>Variabler kan ha flera olika typer av värden, som specificeras nedan.</p>
+            <pre><code class="js">//Nummer vara heltal eller decimaltal
+var number = 100;
+var number2 = 3.1415;
+
+//Textsträgar kan skrivas med både single-qoute och double-qoute
+var string = 'Hello, world!';
+var string2 = "Hello, world!";
+
+//Booleans kan ha ett värde an true eller false
+var boolean = true;
+
+//Arrays är en lista med flera värden
+//Värden koms åt med array[n] där n är värdets plats räknat från noll. D.v.s. första värdet är nr. 0
+var array = ['Saab', 'Volvo', 'BMW'];
+
+//Objects är också en lista med flera värden, men de kan vara olika typer och länkas till en nyckel
+//Värden koms åt med variabelNamn.nyckel, t.ex. object.keyNr
+var object = {key1:'värde 1', key2:'Nyckel 2', keyNr:3};</code></pre>
             <p>För att sedan få tag på värdet av en variabel, skriver man bara dess namn där man vill att värdet ska vara.</p>
             <pre><code class="js">alert(namnet);</code></pre>
             
