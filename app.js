@@ -135,7 +135,7 @@ $(document).keyup(function(e) {
         if (e.which == 37) {
             goToURL($('#content', $('#viewFrame').contents()).data('prev'), true);
         }
-        if (e.which == 72) {
+        if (e.which == 36) {
             goToURL($('#content', $('#viewFrame').contents()).data('home'), true);
         }
     } else {
@@ -145,7 +145,7 @@ $(document).keyup(function(e) {
         if (e.which == 37) {
             goTo($('#content').data('prev'));
         }
-        if (e.which == 72) {
+        if (e.which == 36) {
             goTo($('#content').data('home'));
         }
     }

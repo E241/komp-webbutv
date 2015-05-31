@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>Användarinteraktion</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/js/class.html" data-home="/pages/js/index.html" data-next="/pages/js/avslutning.html">
+        <article class="article">
+            <h2 class="heading2">Användarinteraktion</h2>
+            <p>Här kommer ett kort exempel på hur man använder <em>event-listeners</em>, lysnnar efter användarinput och manipulerar en tagg efter användarens input. Försök förstå hur koden fungerar och prova dig fram själv. Ändra koden och se vad som händer. Du kan alltid ta hjälp utav <a href="http://www.w3schools.com/jsref/">W3Schools</a> om du kör fast.</p>
+        </article>
+    
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+            <p><em>index.html</em></p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h2>Du har skrivit: &lt;a id="output"&gt;&lt;/a&gt;&lt;/h2&gt;
+        &lt;input type="search" oninput="updateText();" id="input"&gt;&lt;/input&gt;
+        &lt;script src="skript.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p><em>skript.js</em></p>
+<pre><code class="js">var output = document.getElementById('output');
+var input = document.getElementById('input');
+
+function updateText(e) {
+    output.innerHTML = input.value;
+}
+</code></pre>
+
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <h2>Du har skrivit: <a id="output"></a></h2>
+                <input type="search" oninput="updateText();" id="input"></input>
+            </div>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+    <script src="interaktion.js"></script>
+</body>
+</html>

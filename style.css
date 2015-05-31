@@ -105,3 +105,7 @@ body {
 #jsCanvas {
     cursor: none;
 }
+
+.noborder {
+    border: none !important;
+}

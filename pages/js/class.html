@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>ID</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/js/id.html" data-home="/pages/js/index.html" data-next="/pages/js/interaktion.html">
+        <article class="article">
+            <h2 class="heading2">Class</h2>
+            <p>I många fall vill man komma åt flera taggar som är relaterade, en viss Class. Och det är helt möjligt. Lika så kan man spara de taggarna som ett objekt, som beskrev tidigare. Detta görs genom <em>document</em> och en av dess funktioner.</p>
+            <pre><code class="js">var paragraphs = document.getElementsByClassName('thePs');</code></pre>
+            <p>Nu finns det en variabel som heter paragraphs, i vilken alla taggar med den klassen finns. Genom den kan vi nu komma åt och manipulera taggarna. Vi kan ändra dess innehåll, eller dess utseende.</p>
+            <p>Vi kan t.ex. ändra texten i alla taggarna när man trycker på en knapp. Vi numrerar dem.</p>
+             <pre><code class="js">function changeText() {
+    for (var i = 0; i &lt; paragraphs.length; i++) {
+        paragraphs.item(i).innerHTML = "Paragraf #" + i;
+    }
+}</code></pre>
+            <pre><code class="html">&lt;button onclick="changeText();"&gt;Byt text&lt;/button&gt;</code></pre>
+            <p>Då denna kod manipulerar saker i sidan, måste den läsas in efter att sidan har laddas. Därför placeras <em>script-taggen</em> <b>sist</b> i <em>body-taggen</em></p>
+        </article>
+
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+            <p><em>index.html</em></p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p class="thePs"&gt;Flygande bäckasiner söka hwila på mjuka tuvor&lt;/p&gt;
+        &lt;p class="thePs"&gt;Flygande bäckasiner söka hwila på mjuka tuvor&lt;/p&gt;
+        &lt;p class="thePs"&gt;Flygande bäckasiner söka hwila på mjuka tuvor&lt;/p&gt;
+        &lt;p class="thePs"&gt;Flygande bäckasiner söka hwila på mjuka tuvor&lt;/p&gt;
+        &lt;p class="thePs"&gt;Flygande bäckasiner söka hwila på mjuka tuvor&lt;/p&gt;
+        &lt;button onclick="changeText();"&gt;Byt text&lt;/button&gt;
+        &lt;script src="skript.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p><em>skript.js</em></p>
+<pre><code class="js">var paragraphs = document.getElementsByClassName('thePs');
+
+function changeText() {
+    for (var i = 0; i &lt; paragraphs.length; i++) {
+        paragraphs.item(i).innerHTML = "Paragraf #" + i;
+    }
+}
+</code></pre>
+
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <p class="thePs">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+                <p class="thePs">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+                <p class="thePs">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+                <p class="thePs">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+                <p class="thePs">Flygande bäckasiner söka hwila på mjuka tuvor</p>
+                <button onclick="changeText();" value="Byt text" >Byt text</button>
+            </div>
+        </article>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+    <script type="text/javascript">
+var paragraphs = document.getElementsByClassName('thePs');
+
+function changeText() {
+    for (var i = 0; i < paragraphs.length; i++) {
+        paragraphs.item(i).innerHTML = "Paragraf #" + i;
+    }
+}
+    </script>
+</body>
+</html>
