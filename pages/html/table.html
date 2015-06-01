@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+	<title>Tabeller</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/html/a.html" data-home="/pages/html/index.html" data-next="/pages/html/listor.html">
+        <article class="article">
+            <h2 class="heading2">Tabeller</h2>
+            <p>Tabeller kan användas till mycket, i princip är det bara fantasin som sätter gränser. Det kan bli en layoutmall för en sida, en meny, ett bildgalleri eller helt enkelt en simpel tabell med data. Till exempel är första menyn, den där man väljer språk, en tabell.</p>
+            <p>Tabeller definieras med hjälp utav flera taggar. Dessa sätts ihop för att bilda ett rutmönster. Taggarna som används är <em>table</em>, <em>tr</em> och <em>td</em>. Taggen <em>table</em> berättar att det är en tabell, taggen <em>tr</em> definierar en rad i en tabell och taggen <em>td</em> definierar en kolumn i en rad.</p>
+            <pre><code class="html">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1:1&lt;/td&gt;
+        &lt;td&gt;Cell 1:2&lt;/td&gt;
+        &lt;td&gt;Cell 1:3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 2:1&lt;/td&gt;
+        &lt;td colspan=2&gt;Cell 2:2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+            <p>Ovan ser ni mönstret för ett table, med <em>tr-taggar</em> som har några <em>td-taggar</em> innuti. Det viktiga är att det finns lika många <em>td</em> i varje <em>tr</em>. Men som ni ser har jag bara 2 stycken <em>td</em> i den andra raden. Det är för att den har attributet <em>colspan=2</em> som berättar att den kollumnen tar upp två kollumners utrymme.</p>
+        </article>
+        
+        <article class="article">
+            <h2 class="heading2">Färdig kod</h2>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Sidans titel&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Cell 1:1&lt;/td&gt;
+                &lt;td&gt;Cell 1:2&lt;/td&gt;
+                &lt;td&gt;Cell 1:3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Cell 2:1&lt;/td&gt;
+                &lt;td colspan=2&gt;Cell 2:2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+        </article>
+        <article class="article">
+            <h2 class="heading2">Resultat</h2>
+            <div class="result">
+                <table>
+                    <tr>
+                        <td>Cell 1:1</td>
+                        <td>Cell 1:2</td>
+                        <td>Cell 1:3</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 2:1</td>
+                        <td colspan=2>Cell 2:2</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </section>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>

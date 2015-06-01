@@ -109,3 +109,7 @@ body {
 .noborder {
     border: none !important;
 }
+
+.result table, .result tr, .result td {
+    border: 1px solid black;
+}
