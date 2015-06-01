@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+<head>
+	<title>Html5 & Css3</title>
+    <style>
+        .classname{
+            color:red;
+        }
+        #idname1{
+            background-color:#DDEE22;
+        }
+        #idname2{
+            background-color:rgb(0,225,225);
+        }
+    </style>
+</head>
+<body>
+    <section id="content" data-prev="/pages/css/color.html" data-home="/pages/css/index.html" data-next="/pages/css/otherselect.html">
+        <article class="article">
+            <h2 class="heading2">Classes & Id:s</h2>
+            <p>Ibland vill man inte ändra alla paragrafer eller alla divs utan bara några, då är klasser och id:s bra att kunna.</p></article>
+        <article class="article">
+            <h3 class="heading3">Class</h3>
+            <p>Vi kan börja med klasser.<br>Klasser eller classes som det heter på engelska är gruperingar av objekt det är som en markering som du kan lägga på flera objekt för att ändra dem som grupp. <br><br> Du markerar ett objekt som en viss klass igenom att skriva class="classname".<br> (classname byts ut mot ditt klassnamn som du väljer skälv).</p>
+            
+            <pre><code class="html"> 
+    &lt;div class="clasname"&gt;
+        &lt;p class="classname"&gt;&lt;/p&gt;
+    &lt;/div&gt;
+                
+            </code></pre>
+            <p>Du kallar sedan på klassen i css dokumentet igenom att skriva ".classname".</p>
+            <pre><code class="css"> .classname {
+                color: red;
+            }
+            </code></pre>
+            <p>Du kan även ha flera klasser på ett objekt igenom att bara sätta ett mellanslag.</p>
+            <pre><code class="html">
+    &lt;div class="classname1 classname2"&gt;&lt;div&gt;
+            </code></pre>
+        </article>
+        <article class="article">
+            <h3 class="heading3">Id</h3>
+            <p>Id:s funkar på ungefär samma sätt bara att ett id bara definerar ett objekt, så det kan till exempel användas för att separera objekt av samma klass.</p>
+            <p>Du anger ett id på samma sätt som med class bara att du skriver id="idname".</p>
+            <pre><code class="html">
+    &lt;p class="classname" id="idname1"&gt;Hej alla barn&lt;/p&gt;
+    &lt;p class="classname" id="idname2"&gt;Nu är det fredag!&lt;/p&gt;
+            </code></pre>
+            <p>Du kallar på ett id på samma sätt som klass fast med "#" itsället för ".".</p>
+            <pre><code class="css">
+    .classname{
+        color:red;
+    }
+    #idname1{
+        background-color:#DDEE22;
+    }
+    #idname2{
+        background-color:rgb(0,225,225);
+    }
+            </code></pre>
+            </article>
+        <article class="article">
+            <h2 class="heading2">Result</h2>
+    <div class="result">
+        <p class="classname" id="idname1">Hej alla barn</p>
+        <p class="classname" id="idname2">Nu är det fredag!</p>
+    </div>
+        </article>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>
+    
+    
+    
+    
+    

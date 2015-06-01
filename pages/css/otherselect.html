@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+<head>
+	<title>Html5 & Css3</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/css/classnid.html" data-home="/pages/css/index.html" data-next="/pages/css/avslut.html">
+        <article class="article">
+            <h2 class="heading2">Andra selektorer</h2>
+            <p>Det finns flera sätt att välja ett specifikt objekt i html/css. Kom ihåg att dethär är bara några exempel.</p></article><article class="article">
+        <h3 class="header3">Specifik id/class</h3>
+        <p>Du kan specifisera villket slags objekt med en class eller ett id du vill välja.</p>
+            
+            <pre><code class="css"> div#idname {
+    
+    color: red;
+    
+}
+            
+p.classname{
+
+
+    background-color:#FFFFFF;
+
+}
+            </code></pre>
+        </article><article class="article">
+        <h3 class="header3">Parrent and child </h3>
+        <p>Parrent betyder förelder och child betyder barn, men vad har det med html och css att göra? Jo det ska jag berätta.</p><p>Om en &lt;p&gt; tag är direkt innanför en &lt;div&gt; som visas under tag är &lt;div&gt; taggen parrent till &lt;p&gt; och &lt;p&gt; tagen är child.</p>
+        <pre><code class="html">
+    &lt;div&gt;
+        &lt;p&gt; Den här paragrafen är direkt "child" till div taggen &lt;/p&gt;
+        &lt;span&gt;
+            &lt;p&gt; Den här paragrafen är inte direkt "child" till div taggen &lt;/p&gt;
+        &lt;/span&gt; 
+    &lt;/div&gt;
+        </code></pre>
+        <p>Om du vill ändra alla paragrafer som är direkt child till en div kan du göra div&gt;p.</p>
+        <pre><code class="css">
+div&gt;p {
+    background-color:blue;
+}
+        </code></pre>
+        <p>Om du vill ändra alla paragrafer som befinner sig i en div men inte behöver vara direkt "child" kan du använda div p.</p>
+        <pre><code class="css">
+div p {
+    color:green;
+}
+        </code></pre>
+        </article><article class="article">
+        <h3 class="header3">Flera selektors</h3>
+        <p>Om du vill ha samma css kod för en klass, ett id och alla paragrafer går det att göra bara igenom att sätta ett komma.</p>
+        <pre><code class="css">
+.classname, #idname, p{
+    color: green;
+}
+        </code></pre>
+        </article><h3 class="header3"></h3>
+        <p></p>
+        </article><h3 class="header3"></h3>
+        <p></p>
+        </article>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>
+    
+    
+    
+    
+    

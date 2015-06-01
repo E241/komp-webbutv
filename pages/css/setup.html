@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/styles/monokai_sublime.css">
+    <script src="../../lib/highlight.pack.js"></script>
+<head>
+	<title>Html5 & Css3</title>
+</head>
+<body>
+    <section id="content" data-prev="/pages/css/intro.html" data-home="/pages/css/index.html" data-next="/pages/css/basic.html">
+        <article class="article">
+            <h2 class="heading2">Setup</h2>
+            <p>Det finns två sätt att implementera css kod i html.<br><br> Det ena sättet är att man skriver css koden emellan "style" taggar. Style taggarna ska vara imällan "head" taggarna i html dokumentet. </p>
+            
+            <pre><code class="html">&lt;!DOCKTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            Insert css here
+        &lt;/style&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+            </code></pre>
+            <p>Detta går bra för mindre hemsidor med en till två html filer men ju större hemsidan blir destå opraktiskare blir det.</p> </article> <article class="article"><p> Det andra alternativet är att man andvänder en Css fil (.css) och kallar då på den med en link tagg. </p>
+            <pre><code class="html">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="filnamn.css"&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+            </code></pre>
+        <p>Fördelarna med att använda en .css fil är att det blir mer organiserat och du kan andvända samma css fil till flera sidor.</p>
+        </article>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+</body>
+</html>
+    
+    
+    
+    
+    

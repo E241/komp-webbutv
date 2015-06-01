@@ -9,7 +9,7 @@
     background-color:silver;
     border-radius: 0.5em;
     box-shadow: 10px 15px 40px #808080;
-    transition: background-color 1s, height 1s, color 1s, width 2s, left 1s, border-radius 2s ;
+    transition: background-color 1s, height 1s, color 1s, width 1s, left 1s, border-radius 1s ;
     
 }
 #div:hover{
@@ -18,7 +18,7 @@
     width: 5em;
     height:5em;
     left:-2.5em;
-    top:-1em;
+    
     border-radius: 3em;
 }
 article{
