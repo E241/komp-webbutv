@@ -70,9 +70,6 @@ function setTitle(title, e) {
 }
 
 function init() {
-    if (location.host == null) {
-        alert('Use a webserver, do not open files directly!');
-    }
     initBaseURI();
     getPageWanted();
     if (isIE()) showIENotice();
