@@ -1,3 +1,8 @@
+//Check if file or webserver
+if (location.host == null || location.host == "") {
+    alert('Use a webserver, do not open files directly!');
+}
+
 $('#viewFrame').load(function() {
     checkButtons();
 });
