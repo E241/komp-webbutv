@@ -9,20 +9,19 @@ function initBaseURI() {
 }
 
 function isIE() {
-        var ua = window.navigator.userAgent;
-        var msie = ua.indexOf("MSIE ");
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
 
-        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If IE < 11 return true
-            return true;
-        else                 // If another browser, return false
-            return false;
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) { // If IE < 11 return true
+        return true;
+    } else {                 // If another browser, return false
+        return false;
+    }
 }
 
 function getPageWanted() {
     if (location.hash != '' && location.hash && !location.hash.isEmptyObject && window.location.pathname != location.hash.replace('#','')) {
         document.getElementById('viewFrame').setAttribute('src', location.hash.replace('#',''));
-    } else {
-        
     }
 }
 
