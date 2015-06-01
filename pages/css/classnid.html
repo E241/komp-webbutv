@@ -25,18 +25,16 @@
             <p>Ibland vill man inte ändra alla paragrafer eller alla divs utan bara några, då är klasser och id:s bra att kunna.</p></article>
         <article class="article">
             <h3 class="heading3">Class</h3>
-            <p>Vi kan börja med klasser.<br>Klasser eller classes som det heter på engelska är gruperingar av objekt det är som en markering som du kan lägga på flera objekt för att ändra dem som grupp. <br><br> Du markerar ett objekt som en viss klass igenom att skriva class="classname".<br> (classname byts ut mot ditt klassnamn som du väljer skälv).</p>
+            <p>Vi kan börja med klasser.<br>Klasser eller classes som det heter på engelska är gruperingar av objekt, det är som en markering som du kan lägga på flera objekt för att ändra dem som grupp. <br><br> Du markerar ett objekt som en viss klass igenom att skriva class="classname".<br> (classname byts ut mot ditt klassnamn som du väljer skälv).</p>
             
-            <pre><code class="html"> 
-    &lt;div class="clasname"&gt;
-        &lt;p class="classname"&gt;&lt;/p&gt;
-    &lt;/div&gt;
-                
+            <pre><code class="html">&lt;div class="clasname"&gt;
+    &lt;p class="classname"&gt;&lt;/p&gt;
+&lt;/div&gt;
             </code></pre>
             <p>Du kallar sedan på klassen i css dokumentet igenom att skriva ".classname".</p>
             <pre><code class="css"> .classname {
-                color: red;
-            }
+    color: red;
+}
             </code></pre>
             <p>Du kan även ha flera klasser på ett objekt igenom att bara sätta ett mellanslag.</p>
             <pre><code class="html">
@@ -52,16 +50,15 @@
     &lt;p class="classname" id="idname2"&gt;Nu är det fredag!&lt;/p&gt;
             </code></pre>
             <p>Du kallar på ett id på samma sätt som klass fast med "#" itsället för ".".</p>
-            <pre><code class="css">
-    .classname{
-        color:red;
-    }
-    #idname1{
-        background-color:#DDEE22;
-    }
-    #idname2{
-        background-color:rgb(0,225,225);
-    }
+            <pre><code class="css">.classname{
+    color:red;
+}
+#idname1{
+    background-color:#DDEE22;
+}
+#idname2{
+    background-color:rgb(0,225,225);
+}
             </code></pre>
             </article>
         <article class="article">
