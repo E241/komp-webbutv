@@ -14,7 +14,7 @@
 }
 #div:hover{
     background-color: yellow;
-    color:yellow;
+    color:transparent;
     width: 5em;
     height:5em;
     left:-2.5em;
