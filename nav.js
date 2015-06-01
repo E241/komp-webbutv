@@ -1,11 +1,7 @@
 //Check if file or webserver
-if (location.host == null || location.host == "") {
+if (location.host === null || location.host === "") {
     alert('Use a webserver, do not open files directly!');
 }
-
-$('#viewFrame').load(function() {
-    checkButtons();
-});
 
 $('#prev').click(function(e) {
     goToURL($('#content', $('#viewFrame').contents()).data('prev'), true);
@@ -36,6 +32,11 @@ function checkButtons() {
         $('#home').show();
     }
 }
+
+$('#viewFrame').load(function() {
+    checkButtons();
+});
+
 
 /*function setNavbarColor(colorA, colorB) {
     $('#navBg').css({'background':('-webkit-linear-gradient('+colorA+', '+colorB+')'), 'background':('linear-gradient('+colorA+', '+colorB+')')})
